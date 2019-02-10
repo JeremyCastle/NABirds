@@ -1,0 +1,67 @@
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../static/style.css'>
+    <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+    <div class='center'>
+        <div class='title'>Name That Bird</div>
+        <p>
+        <img src="../static/collage.jpg" width="400" height="300" >
+        </p>
+        <p>
+            Use images of <strong>any common</strong> North American Bird!
+        </p>
+        <p>
+        	Model is 90% accurate on quality photos.
+        </p>
+        <div class='content'>
+            <div class='no-display'>
+                <input id='file-input'
+                       class='no-display'
+                       type='file'
+                       name='file'
+                       accept='image/*'
+                       onchange='showPicked(this)'>
+            </div>
+            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+            <div class='upload-label'>
+                <label id='upload-label'>No file chosen</label>
+            </div>
+            <div>
+                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+            </div>
+            <div class='analyze'>
+                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+            </div>
+            <div class='result-label'>
+                <label id='result-label'></label>
+            </div>
+        
+            <footer class="footer">
+        		<div class="content has-text-centered">
+           		 	<p>
+                	Created by Jeremy R. Castle, Feb 2019
+                	</p>
+                	<p>
+                	<a href="http://twitter.com/jcastledc">
+					<img src="../static/twitter.png" width="25" height="25" >
+					<a href="http://linkedin.com/in/jeremycastle">
+					<img src="../static/linkedin.png" width="25" height="25">
+					<a href="http://github.com/jeremycastle">
+					<img src="../static/github.png" width="25" height="25">
+           			</p>
+        	</div>
+        
+   			 </footer>
+        
+        
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
